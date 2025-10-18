@@ -3,6 +3,11 @@ from tkinter import messagebox
 import networkx as nx
 import matplotlib.pyplot as plt
 
+# A Python tool with a graphical interface for visualizing, analyzing, and testing properties of binary relations.
+# Built with Tkinter and NetworkX, this app allows users to input a relation, visualize its graph, examine strict
+# and indifference parts, and check key properties and topological sorts.
+# This was built with the support of Cursor AI.
+
 class BinaryRelationApp:
     def __init__(self, root):
         self.root = root
@@ -76,7 +81,7 @@ class BinaryRelationApp:
         frame = tk.Frame(self.root, bg="#f4f4f9")
         frame.pack()
 
-        # Add column labels (top)
+        # Add column labels 
         for j in range(m):
             tk.Label(
                 frame,
@@ -87,7 +92,7 @@ class BinaryRelationApp:
 
         self.entries = []
         for i in range(m):
-            # Add row label (left)
+            # Add row label
             tk.Label(
                 frame,
                 text=chr(97 + i),
